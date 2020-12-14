@@ -1,0 +1,11 @@
+@mixin menu($font-size) {
+  color: red;
+  display: block;
+  font-size: $font-size;
+  // .link {
+  //   @content
+  // }
+  @media screen and (min-width: 1024px) {
+    @content
+  }
+}

@@ -1,0 +1,7 @@
+@mixin button {
+  display: inline-block;
+  margin: 1em;
+  a {
+    text-decoration: none;
+  }
+}

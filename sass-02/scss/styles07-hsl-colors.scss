@@ -1,0 +1,10 @@
+$colors: hsl(0, 100, 50);
+
+@for $i from 1 through 365 {
+  $colors: append($colors, hsl($i, 100, 50), comma);
+}
+
+body {
+  background: linear-gradient($colors);
+  min-height: 100vh;
+}

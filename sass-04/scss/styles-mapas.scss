@@ -1,0 +1,29 @@
+@import "config/variables";
+/*
+Funciones de mapas
+
+map-get($map, $key)
+map-keys($map) devuelve todos los keys
+map-values($map) devuelve todos los values
+map-has-key($map, $key) devuelve boolean
+map-merge($map1, $map2)
+
+*/
+$colors: (
+  primary: red,
+  secondary: green,
+  tertiary: blue
+);
+@function color($color-key) {
+  @if map-has-key($colors, $color-key) {
+    @return map-get($colors, $color-key); 
+  }
+  @return null;
+}
+
+body {
+  // es tedioso tener que hacer esto y siempre repito
+  // color: map-get($colors, primary);
+  color: color(secondary);
+  
+}

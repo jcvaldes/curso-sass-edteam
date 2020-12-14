@@ -1,0 +1,56 @@
+// Anidamientos
+// LLevar hasta 2 niveles de anidamientos mas esta mal
+
+ul {
+  margin: 0;
+  display: block;
+  animation: menu 1s;
+  // mala practica seria poner
+  // &li {...}
+  li {
+    margin: 0;
+    -webkit-animation: menu 1s;
+  }
+  a {
+    display: block;
+    -webkit-animation: menu 1s;
+  }
+  span {
+    color: red;
+    -webkit-animation: menu 1s;
+  }
+  // hover de ul
+  &:hover {
+    color: green;
+  }
+  &::before {
+    content: 'EDTEAM'
+  }
+  // si saco & es un hover de los hijos de ul
+  // :hover {
+  //   color: green;
+  // } 
+  @media screen and (min-width: 640px) {
+    display: flex;
+  }
+  @keyframes menu {
+    to {
+      color: red;
+    }
+  }
+}
+.menu {
+  display: block;
+  &-item {
+    color: red
+  }
+  font: {
+    size: 1em;
+    style: italyc;
+    family: arial;
+  }
+  grid-template: {
+    columns: 100px 100px;
+    rows: auto;
+  }
+}

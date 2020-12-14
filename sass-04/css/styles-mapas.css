@@ -1,0 +1,12 @@
+/*
+Funciones de mapas
+
+map-get($map, $key)
+map-keys($map) devuelve todos los keys
+map-values($map) devuelve todos los values
+map-has-key($map, $key) devuelve boolean
+map-merge($map1, $map2)
+
+*/
+body {
+  color: green; }

@@ -1,0 +1,28 @@
+// @extend crea placeholders
+
+%button {
+  display:  inline-block;
+  margin: 1em 0;
+  padding: .5em 1.5en
+}
+
+.button {
+  @extend %button;
+}
+
+.button-alert {
+  @extend %button;
+  background: red;
+  color: white;
+}
+
+.button:hover {
+  transform: translateY(-5px);
+  -webkit-transform: translateY(-5px);
+  -moz-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  -o-transform: translateY(-5px);
+}
+.button.active {
+  @extend .button:hover
+}

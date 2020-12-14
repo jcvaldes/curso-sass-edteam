@@ -1,0 +1,7 @@
+@import "config/variables";
+@import "config/functions";
+
+body {
+  font-size: em(20px);
+  background: img('image.jpg');
+}

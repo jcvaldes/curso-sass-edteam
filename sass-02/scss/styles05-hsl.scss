@@ -1,0 +1,8 @@
+// $color: 0;
+@for $i from 0 through 360 {
+  body {
+    // creo un espectro: 
+    // hsl es un modo de color que se compone de TONO, SATURACION, ILUMINACION  
+    background: hsl($i, 100, 50);
+  }
+}

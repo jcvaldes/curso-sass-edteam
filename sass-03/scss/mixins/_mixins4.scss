@@ -1,0 +1,37 @@
+// parametros multiples
+@mixin button($colors...) {
+  @if $buttons {
+    .button {
+      display: inline-block;
+      margin: 1em;
+      color: nth($colors, 1);
+      a {
+        text-decoration: none;
+      }
+      @if length($colors) > 1 {
+        @for $i from 2 through length($colors) {
+          &.#{nth($colors, $i)} {
+            color: nth($colors, $i)
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin menu($selector-item: 'menu-item', $selector-link: 'menu-link') {
+  margin: {
+    top: 0;
+    bottom: 0;
+    left: 0;
+  }
+  list-style: none;
+ 
+  #{$selector-item} {
+    display: block;
+  }
+  #{$selector-link} {
+    display: block;
+    text-decoration: none;
+  }
+}

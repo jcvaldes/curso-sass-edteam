@@ -1,0 +1,25 @@
+// condicionales
+
+// $dev: true;
+// @if 3 < 5 {
+//   * {
+//     outline: 1px solid red;
+//   }
+// } @else if 3 > 5 or 1==1 {
+//   * {
+//     display: block;
+//   }
+// } @else {
+//   * {
+//     color: green;
+//   }
+// }
+
+$buttons: true !default;
+$colors: true !default;
+
+$buttons: false;
+//importacion condicional manejada por variables
+
+@import "components/buttons";
+@import "components/colors";

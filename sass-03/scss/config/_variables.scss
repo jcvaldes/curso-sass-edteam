@@ -1,0 +1,15 @@
+$buttons: true !default;
+
+$button-colors: (
+  primary: blue,
+  secondary: yellow,
+  alert: red,
+  cta: orange,
+  warning: yellow
+);
+$breakpoints: (
+  small: 320px,
+  medium: 640px,
+  large: 1024px,
+  xlarge: 1440px
+);

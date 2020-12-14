@@ -1,0 +1,19 @@
+// Opciones de compilacion
+// node-sass -w scss -o css
+// node-sass -w scss -o css --output-style=expanded | compressed | nested | compact
+// agrega la linea de scss que lo origino cada estilo
+// node-sass -w scss -o css --output-style=compact --source-comments
+
+
+// sourcemap
+// node-sass -w scss -o css --output-style=compact --source-map=true
+
+body {
+  color: red;
+  p {
+    display: inline-block;
+  }
+}
+p {
+  color: green;
+}

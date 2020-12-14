@@ -1,0 +1,18 @@
+@function double($number) {
+  @if type-of($value: $number) == number {
+    @return $number * 2;
+  }
+  @return null;
+}
+
+body {
+  font-size: double(1em);
+  // funciones ya creadas
+  // width: calc(100% - 20px);
+  // background: url(image.jpg);
+  // transform: translate(20px, 100px);
+  // -webkit-transform: translate(20px, 100px);
+  // -moz-transform: translate(20px, 100px);
+  // -ms-transform: translate(20px, 100px);
+  // -o-transform: translate(20px, 100px);
+}

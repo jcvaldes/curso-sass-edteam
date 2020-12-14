@@ -1,0 +1,12 @@
+@import "config/variables";
+@import "mixins/mixins";
+
+body {
+  background: red;
+  @include mq(small) {
+    background: green;
+  }
+  @include mq(333px) {
+    background: yellow;
+  }
+}

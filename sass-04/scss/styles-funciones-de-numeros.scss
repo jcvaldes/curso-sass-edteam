@@ -1,0 +1,42 @@
+@import "config/variables";
+@import "config/functions";
+// Armamos un sistema de columnas tipo bootstrap
+
+/*
+Funciones de strings
+percentage($number)
+max($number1, $number2 ....)
+min($number1, $number2 ....)
+floor($number1) //redondea hacia abajo
+ceil($number1) //redondea hacia arriba
+round($number1) //redondea hacia el mas cercano
+random() //numeros aleatorios entre 0 y 1
+random(limit) //numeros aleatorios entre 0 y el limite que yo ponga
+
+random se usa para animaciones para que no se vean muy forzadas y para animaciones de colores
+
+*/
+@function columns($column, $total-columns) {
+  @return percentage($column / $total-columns) ;
+}
+
+// .cols-4 {
+//   width: columns(4, 12);
+// }
+
+@for $i from 1 through 12 {
+  .cols-#{$i} {
+    width: columns($i, 12);
+  }
+}
+
+body {
+  // width: max(100%, 20%, 50%);
+  width: floor(54.9%);
+  width: ceil(54.9%);
+  width: round(54.5%);
+  width: percentage(random());
+  width: random(15);
+  
+  
+}

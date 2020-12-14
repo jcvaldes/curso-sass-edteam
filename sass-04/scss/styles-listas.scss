@@ -1,0 +1,19 @@
+@import "config/variables";
+@import "config/functions";
+/*
+Funciones de listas
+nth(list, n)
+index($list, $value)
+join($list1,$list2,$list3, separador: space|comma)
+append($list, $value, separador: space|comma)
+*/
+$border: 1px solid red;
+$border2: 21px solid green;
+$color: yellow;
+
+body {
+  border-color: nth($border, 3);
+  z-index: index($border, red);
+  border-color: join($border, $border2, comma);
+  border: append(1px solid, $color, comma)  
+}

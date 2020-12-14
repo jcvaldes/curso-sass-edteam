@@ -1,0 +1,3 @@
+body {
+  background: linear-gradient(to top, black, #bf4040, #c13e3e, #c23d3d, #c33c3c, #c43b3b, #c63939, #c73838, #c83737, #c93636, #cb3434, #cc3333, #cd3232, #cf3030, #d02f2f, #d12e2e, #d22d2d, #d42b2b, #d52a2a, #d62929, #d72828, #d92626, #da2525, #db2424, #dd2222, #de2121, #df2020, #e01f1f, #e21d1d, #e31c1c, #e41b1b, #e61a1a, #e71818, #e81717, #e91616, #eb1414, #ec1313, #ed1212, #ee1111, #f00f0f, #f10e0e, #f20d0d, #f40b0b, #f50a0a, #f60909, #f70808, #f90606, #fa0505, #fb0404, #fc0303, #fe0101, red);
+  min-height: 100vh; }

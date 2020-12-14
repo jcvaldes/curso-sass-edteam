@@ -1,0 +1,11 @@
+$colors: hsl(0, 100, 50);
+
+@for $i from 1 through 360 {
+  $colors: append($colors, hsl($i, 100, 50), comma);
+}
+
+body {
+  // background: linear-gradient($colors);
+  background: radial-gradient(circle at center, $colors);
+  min-height: 100vh;
+}

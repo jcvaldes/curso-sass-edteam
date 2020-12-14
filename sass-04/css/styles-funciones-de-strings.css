@@ -1,0 +1,14 @@
+/*
+Funciones de strings
+quote($string)
+unquote($string)
+str-length($string)
+str-index($string, $value)
+to-upper-case($string)
+*/
+body {
+  border: 1px solid red;
+  z-index: 5;
+  color: yellow; }
+  body::before {
+    content: "SOLID"; }

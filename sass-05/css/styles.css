@@ -1,0 +1,32 @@
+/* Funciones
+RGB
+  red($color)
+  green($color)
+  blue($color)
+
+HSL
+  hue($color)
+  saturation($color)
+  lightness($color)
+
+  darken($color, cantidad)
+  lighten($color, cantidad)
+  saturate($color, cantidad)
+  desaturate($color, cantidad)
+  adjust-hue($color, cantidad)
+
+*/
+button {
+  display: inline-block;
+  border: none;
+  padding: .5em 1.5em;
+  background: yellow;
+  color: #222; }
+
+body {
+  background: red;
+  background: #cc0000;
+  background: #ff3333;
+  background: red;
+  background: #cc3333;
+  background: #ffaa00; }

@@ -1,0 +1,28 @@
+// tipos de datos
+
+// Tipos de datos
+// String
+// Numeros
+// Coleres
+// Booleans
+// Maps
+// Lists
+//quote() - unquote()
+$var: "hola";
+// lista: separados por espacios o comas
+$border: 1px solid red;
+//$border: 1px, solid, red
+$color: darken(red, 20 );
+$mapa: (
+    color: red,
+    font: arial,
+    size: 20px
+);
+body {
+    // background: url($var);
+    background: type-of($var);
+    content: $var;
+    color: $color;
+    border: $border;
+    background: map-get($mapa, color)
+}

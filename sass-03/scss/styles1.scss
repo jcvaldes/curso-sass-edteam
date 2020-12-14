@@ -1,0 +1,17 @@
+@import "config/variables";
+@import "mixins/mixins";
+
+// .button {
+//   @include button;
+// }
+// $buttons: true;
+// @include button(red, green, blue, yellow);
+
+// @include button(primary, secondary, alert, cta); //si se agrega uno mas lo tengo que poner aca tambien y no está bueno
+@include button(map-keys($button-colors)...);
+
+.menu {
+  // @include menu('.item', '.link');
+  // @include menu(li, a);
+  @include menu;
+}

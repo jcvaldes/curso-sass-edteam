@@ -1,0 +1,11 @@
+@import "config/variables";
+@import "mixins/mixins";
+
+.menu {
+  // porque tengo un content en el mixin puedo hacer esto
+  @include menu(1em) {
+    color: green;
+    font-size: 2em;
+    display: flex;
+  };
+}

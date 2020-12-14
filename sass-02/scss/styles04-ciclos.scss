@@ -1,0 +1,40 @@
+// Ciclos
+
+@for $i from 1 through 20 {
+  @if $i % 2 == 0 {
+    .column-#{$i * 5} {
+      width: $i * 5%;
+    }
+  }
+}
+
+$colors: red green blue;
+@each $color in $colors {
+  .#{$color} {
+    background: $color;
+  }
+}
+@each $color in $colors {
+  .button-#{$color} {
+    background: $color;
+  }  
+}
+
+$colores: (
+  primary: red,
+  secondary: green,
+  tertiary: blue
+);
+
+$breakpoints: (
+  small: 360px,
+  medium: 640px,
+  large: 1024px,
+  xlarge: 1200px,
+);
+
+@each $key, $value in $colores {
+  .button-#{$key} {
+    background: $value;
+  }
+}

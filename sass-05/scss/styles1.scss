@@ -1,0 +1,60 @@
+// color sustrativo (pinturas) 
+// cyan, magenta, amarillo, negro (CMYK)
+
+// Color aditivo (luz, pantalla)
+// RGB
+// 256, 256, 256 == 2^8, 2^8, 2^8 == 16M colores = Profundidad de color de 24bits
+
+// no es amigable con el humano el rgb ej: 23, 200, 146
+// Notacion hexa
+// RRGGBB 0123456789ABCDEF
+
+// hue saturation, lighten (HSL)
+// hue -> tono de color (de 0 a 360 grados)
+// saturation -> intensidad de color, de gris al color puro
+
+// lighten -> la cantidad de luz (0% da negro, 100% da blanco, el color puero esta al 50%)
+// HUE
+// 0/360 -> red
+// 60    -> yellow
+// 120   -> green
+// 180   -> cyan
+// 240   -> blue
+// 300   -> magenta
+
+
+/* Funciones
+RGB
+  red($color)
+  green($color)
+  blue($color)
+
+HSL
+  hue($color)
+  saturation($color)
+  lightness($color)
+
+  darken($color, cantidad)
+  lighten($color, cantidad)
+  saturate($color, cantidad)
+  desaturate($color, cantidad)
+  adjust-hue($color, cantidad)
+*/
+
+$base-color: red;
+$text-color-light: #fff;
+$text-color-dark: #222;
+
+body {
+  background: rgb(23,200,146);
+  // lo obscuresco pero le saco verde
+  background: rgb(23,180,146);
+  red: red( hsl(200, 100, 50));
+  green: green( hsl(200, 100, 50));
+  blue: blue( hsl(200, 100, 50));
+  $color: rgb(14, 28, 94);
+  h: hue($color);
+  s: saturation($color);
+  l: lightness($color);
+
+}

@@ -1,0 +1,12 @@
+/*
+Funciones de listas
+nth(list, n)
+index($list, $value)
+join($list1,$list2,$list3, separador: space|comma)
+append($list, $value, separador: space|comma)
+*/
+body {
+  border-color: red;
+  z-index: 3;
+  border-color: 1px, solid, red, 21px, solid, green;
+  border: 1px, solid, yellow; }

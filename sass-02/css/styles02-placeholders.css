@@ -1,0 +1,15 @@
+.button, .button-alert {
+  display: inline-block;
+  margin: 1em 0;
+  padding: .5em 1.5en; }
+
+.button-alert {
+  background: red;
+  color: white; }
+
+.button:hover, .button.active {
+  transform: translateY(-5px);
+  -webkit-transform: translateY(-5px);
+  -moz-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  -o-transform: translateY(-5px); }

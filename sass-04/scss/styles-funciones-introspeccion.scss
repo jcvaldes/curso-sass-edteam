@@ -1,0 +1,34 @@
+@import "config/variables";
+/*
+Funciones de introspeccion
+inspect() es como el console.log
+type-of() devuelve tipo de dato
+unit() devuelve la unidad de un numero como string
+unitless() devuelve true si el numero no tiene unidad
+mixin-exists($mixin)
+function-exists(function)
+variable-exists($var)
+global-variable-exists($var)
+*/
+$colors: (
+  primary: red,
+  secondary: green,
+  tertiary: blue
+);
+@mixin button {
+  color: green;
+}
+
+body {
+  color: inspect($colors);
+  color: unit(10px);
+  color: unitless(10px);
+  // no se puede hacer
+  // width: 20px + 2em;
+}
+
+@if mixin-exists(button) {
+  body {
+    background: red;
+  }
+}

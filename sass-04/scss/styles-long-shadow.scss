@@ -1,0 +1,20 @@
+@function long-shadow($n, $color) {
+  // box-shadow: 1px 1px black, 2px 2px black, 3px 3px black;
+
+  // $shadow: 1px 1px $color;
+  // $shadow: unquote('1px 1px $color');
+  $shadow: #{ 1px 1px $color };
+  @for $i from 2 through $n {
+    // $shadow: append($shadow, $i*1px $i*1px $color, comma);
+    $shadow: append($shadow, #{$i*1px $i*1px $color}, comma);
+  }
+  @return $shadow;
+}
+
+body {
+  background: red;
+}
+.text {
+  text-shadow: long-shadow(100, darken(red, 10));
+  font-size: 6em;
+}

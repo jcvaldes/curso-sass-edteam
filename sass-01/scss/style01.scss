@@ -1,0 +1,32 @@
+$color: green;
+$size: 200px;
+$width: 20px;
+// $primary-color: red;
+$primary-color: blue !default; //puede ser sobreescrita antes o despues
+// $primary-color: red;
+
+body {
+  background: $primary-color;
+  padding: $size / 1px ;
+  padding-top: $size - 10 ;
+  // scope
+  $width: 30px;
+  margin: $width;
+}
+
+p {
+  margin: $width;
+  width: calc(100% - #{$size});
+}
+
+// interpolacion de variables
+// crea un selector
+#{$color} {
+  color: $color;
+}
+
+// interpolacion de variables
+// creo un selector de clase a partir de un color
+.#{$color} {
+  color: $color;
+}

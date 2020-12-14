@@ -1,0 +1,29 @@
+@import "config/variables";
+@import "config/functions";
+/*
+Funciones de strings
+quote($string)
+unquote($string)
+str-length($string)
+str-index($string, $value)
+to-upper-case($string)
+*/
+
+$width: 1px;
+$style: solid;
+$color: red;
+
+$colors: (
+  primary: yellow
+);
+body {
+  border: unquote($width + ' ' + $style + ' ' + $color);
+
+  &::before {
+    content: quote(to-upper-case($style));
+  }
+  // z-index: str-index($style, 'i');
+  z-index: str-length($style);
+  color: map-get($colors, primary ) 
+
+}

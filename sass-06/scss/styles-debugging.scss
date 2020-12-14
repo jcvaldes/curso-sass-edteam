@@ -1,0 +1,28 @@
+/* Debugging con 
+  @debug
+  @warn
+  @error
+*/
+
+$size: 1em;
+$colors: red green blue;
+@mixin button {
+  color: red;
+  @warn 'El mixin va a desaparecer en la proxima versión. Por favor use el mixin button-new en su lugar';
+}
+@mixin button-new($color) {
+  @if type-of($color) == color {
+    color: $color;
+  } @else {
+    @error 'El parametro #{$color} no es valido. Use un tipo de dato color';
+  }
+}
+body {
+  @debug type-of($value: $size);
+  @debug $colors;
+  @debug type-of($colors);
+}
+.button {
+  @include button;
+  @include button-new(hola);
+}
